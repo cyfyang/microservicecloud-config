@@ -24,12 +24,12 @@ mybatis:
   config-location: classpath:mybatis/mybatis.cfg.xml
   type-aliases-package: com.lucifer.springcloud.entity
   mapper-locations: 
-  - classpath:mybatis/mapper/**/*.xml
+      - classpath:mybatis/mapper/**/*.xml
 
 eureka:
   client:					#客户端注册进eureka服务列表内
     service-url: 
-      defaultZone: http://eureka7001.com:7001/eureka/
+      defaultZone: http://eureka7001.com:7001/eureka
   instance:
     instance-id: dept-8001.com
     prefer-ip-address: true
@@ -37,7 +37,7 @@ eureka:
 info:
   app.name: lucifer-microservicecloud-springcloudconfig01
   company.name: www.lcifer.com
-  build.artifaceId: $project.artifactId$
+  build.artifactId: $project.artifactId$
   build.version: $project.version$
 ---
 server:
@@ -63,12 +63,12 @@ mybatis:
   config-location: classpath:mybatis/mybatis.cfg.xml
   type-aliases-package: com.lucifer.springcloud.entity
   mapper-locations: 
-  - classpath:mybatis/mapper/**/*.xml
+      - classpath:mybatis/mapper/**/*.xml
 
 eureka:
   client:		#客户端注册进eureka服务列表内
     service-url:
-      defaultZone: http://eureka7001.com:7001/eureka/
+      defaultZone: http://eureka7001.com:7001/eureka
    instance:
      instance-id: dept-8001.com
      prefer-ip-address: true
